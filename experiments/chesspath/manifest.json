@@ -1,0 +1,64 @@
+{
+  "assets/bishop-odd.png": {
+    "file": "assets/bishop-odd-72a56f0d.png",
+    "src": "assets/bishop-odd.png"
+  },
+  "assets/bishop.png": {
+    "file": "assets/bishop-0d93e0be.png",
+    "src": "assets/bishop.png"
+  },
+  "assets/ground.png": {
+    "file": "assets/ground-ad250ea4.png",
+    "src": "assets/ground.png"
+  },
+  "assets/knight.png": {
+    "file": "assets/knight-b1fea073.png",
+    "src": "assets/knight.png"
+  },
+  "assets/princhess.png": {
+    "file": "assets/princhess-3b49a5fc.png",
+    "src": "assets/princhess.png"
+  },
+  "assets/rook.png": {
+    "file": "assets/rook-85aa3219.png",
+    "src": "assets/rook.png"
+  },
+  "index.html": {
+    "assets": [
+      "assets/princhess-3b49a5fc.png",
+      "assets/bishop-odd-72a56f0d.png",
+      "assets/bishop-0d93e0be.png",
+      "assets/knight-b1fea073.png",
+      "assets/rook-85aa3219.png",
+      "assets/ground-ad250ea4.png",
+      "assets/capture-7158a77f.mp3",
+      "assets/move-3a2eb75a.mp3",
+      "assets/check-ef4764a7.mp3",
+      "assets/game-start-cdb01ddc.mp3",
+      "assets/game-end-c8ba87b4.webm"
+    ],
+    "file": "assets/index-8ae9403a.js",
+    "isEntry": true,
+    "src": "index.html"
+  },
+  "sounds/capture.mp3": {
+    "file": "assets/capture-7158a77f.mp3",
+    "src": "sounds/capture.mp3"
+  },
+  "sounds/check.mp3": {
+    "file": "assets/check-ef4764a7.mp3",
+    "src": "sounds/check.mp3"
+  },
+  "sounds/game-end.webm": {
+    "file": "assets/game-end-c8ba87b4.webm",
+    "src": "sounds/game-end.webm"
+  },
+  "sounds/game-start.mp3": {
+    "file": "assets/game-start-cdb01ddc.mp3",
+    "src": "sounds/game-start.mp3"
+  },
+  "sounds/move.mp3": {
+    "file": "assets/move-3a2eb75a.mp3",
+    "src": "sounds/move.mp3"
+  }
+}
