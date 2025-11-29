@@ -11,12 +11,27 @@
             overflow: hidden;
             font-family: Arial, sans-serif;
             cursor: none; /* Hide default cursor */
+            -webkit-user-select: none; /* Prevent text selection on mobile */
+            user-select: none;
+            -webkit-touch-callout: none; /* Prevent callout on iOS */
+        }
+        
+        /* Show default cursor on touch devices */
+        @media (hover: none) and (pointer: coarse) {
+            body {
+                cursor: auto;
+            }
+            
+            #hand-cursor {
+                display: none !important;
+            }
         }
         
         #canvas {
             display: block;
             width: 100vw;
             height: 100vh;
+            touch-action: none; /* Prevent default touch behaviors like scrolling */
         }
         
         .instructions {
@@ -30,6 +45,15 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
             pointer-events: none;
             z-index: 10;
+            padding: 0 20px;
+        }
+        
+        /* Responsive text for mobile */
+        @media (max-width: 600px) {
+            .instructions {
+                font-size: 16px;
+                top: 10px;
+            }
         }
         
         #hand-cursor {
@@ -60,6 +84,7 @@
             left: 50%;
             transform: translateX(-50%);
             width: 400px;
+            max-width: 90vw; /* Responsive width for mobile */
             height: 40px;
             background: rgba(0, 0, 0, 0.7);
             border-radius: 20px;
@@ -69,6 +94,18 @@
             opacity: 0;
             transition: opacity 0.3s ease;
             z-index: 10;
+        }
+        
+        /* Smaller rage meter on mobile */
+        @media (max-width: 600px) {
+            #rage-meter-container {
+                bottom: 20px;
+                height: 35px;
+            }
+            
+            #rage-meter-label {
+                font-size: 12px !important;
+            }
         }
         
         #rage-meter-fill {
@@ -105,11 +142,11 @@
             }
         }
     </style>
-  <script type="module" crossorigin src="/experiments/peachy-keen/assets/index-tdfqqqLy.js"></script>
+  <script type="module" crossorigin src="/experiments/peachy-keen/assets/index-Dle5ATEd.js"></script>
 </head>
 <body>
     <div class="instructions">
-        🍑 Move your hand over the peach to smack it! 🍑
+        🍑 Swipe over the peach to smack it! 🍑
     </div>
     
     <div id="rage-meter-container">
